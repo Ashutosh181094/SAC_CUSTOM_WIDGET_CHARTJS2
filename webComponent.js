@@ -25,7 +25,7 @@
           
 		   let shadowRoot = this.attachShadow({mode: "open"});
 		   shadowRoot.appendChild(template.content.cloneNode(true));
-           // this._firstConnection = false;
+           this._firstConnection = false;
            this.chartTypeValue="radar";
            
         
