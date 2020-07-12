@@ -3,7 +3,13 @@
     let chartsJS=document.createElement('script');
     chartsJS.src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js';
     document.head.appendChild(chartsJS);
-    
+	
+    let stylesheet = document.createElement('link');
+    stylesheet.rel='stylesheet';
+    stylesheet.href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css';
+    stylesheet.async=false;
+    document.head.appendChild(stylesheet);    
+	
     let template = document.createElement('template');
 	
   template.innerHTML = `
