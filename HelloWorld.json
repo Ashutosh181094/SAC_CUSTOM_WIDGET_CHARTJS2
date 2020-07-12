@@ -1,0 +1,64 @@
+{
+	"name": "CHARTJS2",
+	"description": "Custom Widget Template",
+	"eula": "",
+	"vendor": "AHA2COB",
+	"license": "",
+	"id": "com.sap.sample.template.05",
+	"newInstancePrefix": "CHARTSJS2",
+	"version": "0.0.23",
+	"icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAA3NCSVQICAjb4U/gAAAAb1BMVEX///+ZmZl4dXdBPj9hYGGOjpE6ODo8OjwvLC0lISIpJSaMiooyLzH/cjMxLi9GREb/ZSk2MzV9fX1MSks4NjcrJyn/WR9ycnJRT1AtKiv/TRVdXF1ra2v7VCfJyMk+PD6tra+rqqtUUlU0MTNqaGpjxDg2AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAKhJREFUGNM9z9EagiAMBeDpEGkWNAGhqFTq/Z8xwK/+q7PtZgeg6npEMcBPJ0d1Kmg6ZnFGRZcLESnR7tpoouuVSCPPZYHWee+XxTsrvQeYQrwV97tL5uZigMeoqucTUSnWEVBX4fWaW2BYz1W3bXsLDPldcD8MoYZ3glmMjNbGLJk5igDgnLTGHazdAPo1Gdms2bZXhRmbMuNR5rNWJuX075sMYg57jV94IQ2Xqt1atQAAAABJRU5ErkJggg==",
+	"webcomponents": [
+        {
+			"kind": "main",
+			"tag": "com-sap-sample-helloworld5",
+                        "url": "https://ashutosh181094.github.io/SAC_CUSTOM_WIDGET_CHARTJS/webComponent.js",
+                        "integrity": "",
+                        "ignoreIntegrity" : true
+        }
+    ],
+	"properties": {
+              "chartTypeValue": {
+			"type": "string",
+			"description": "The Chart Type value",
+			"default" : "radar"
+		}
+	},
+	"methods": {
+              "setbar": {
+			"description": "Update the Chart type to Bar",
+			"body": "this.chartTypeValue = 'bar';"
+		},
+              "sethorizontalBar": {
+			"description": "Update the Chart type to HorizontalBar",
+			"body": "this.chartTypeValue = 'horizontalBar';"
+		},
+              "setpie": {
+			"description": "Update the Chart type to Pie",
+			"body": "this.chartTypeValue = 'pie';"
+		},
+              "setline": {
+			"description": "Update the Chart type to Line",
+			"body": "this.chartTypeValue = 'line';"
+		},
+              "setdoughnut": {
+			"description": "Update the Chart type to Doughnut",
+			"body": "this.chartTypeValue = 'doughnut';"
+		},
+              "setradar": {
+			"description": "Update the Chart type to RADAR",
+			"body": "this.chartTypeValue = 'radar';"
+		},
+              "setpolarArea": {
+			"description": "Update the Chart type to Polar Area",
+			"body": "this.chartTypeValue = 'polarArea';"
+		}
+              "getChartType": {
+			"description": "Get the chartType",
+			"body": "return this.chartTypeValue;",
+			"returnType": "string"
+		},
+	},
+	"events": {
+	}
+}
