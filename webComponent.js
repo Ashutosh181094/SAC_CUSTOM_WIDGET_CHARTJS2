@@ -2,7 +2,6 @@
     
     let chartsJS=document.createElement('script');
     chartsJS.src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js';
-    chartsJS.async=false;
     document.head.appendChild(chartsJS);
     let template = document.createElement('template');
 	
@@ -16,7 +15,7 @@
    
 	
     
-    
+    chartsJS.onload = () => 
     customElements.define('com-sap-sample-helloworld5', class HelloWorld extends HTMLElement {
 
 
